@@ -9,13 +9,24 @@
 
 ## Behat with Laravel
 
-Behat is a php framwork for autotesting your project. It contains Behavior-Driven Test Cases placed in '.feature' files. This has a special format called Ghirkyn-syntax to describe test cases.
+Behat is a php framwork for autotesting your project. It contains Behavior-Driven Test Cases placed in '.feature' files. Those has special format called Gherkin-syntax that  more readable by humans than test cases implemented by phpunit.
 
-This project contains only one example.feature file to demonstrate how behat is working. To run behat test in the project
-Open a cmd window and start the web application:
+This project contains only one example.feature file in /features directory 
+to demonstrate how a simple behat project is working. 
+
+
+To run behat test in feature file
+First of all open a cmd window and start the web application:
+
 $ php -S localhost:8888 -t public
 
-Open an another cmd window and start scenarios:
+
+First scenario is testing the '/' page and searching 'Laravel' text value on the page.
+Second scenario is also testing a page (try to open /home page) and check whether redirecting to /login page is working.
+This scenario also contains a custom verification step.
+
+To start these scenarios, open a new cmd and type it:
+
 $ behat
 
 
