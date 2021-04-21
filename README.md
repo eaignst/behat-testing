@@ -19,9 +19,12 @@ Open an another cmd window and start scenarios:
 $ behat
 
 
-## Content that used for the project
+## Resources and Links
 
 - [Behat] framework(https://docs.behat.org/en/latest/#).
 - [Behat-Laravel-Extension] plugin (https://github.com/laracasts/Behat-Laravel-Extension).
 - [Behat-Mink-Extension] plugin (https://github.com/Behat/MinkExtension)
 - How to install and Setup Behat with Laravel 5 [video tutorial](https://laravel-news.com/install-setup-behat-laravel-5).
+
+## Copyright
+This content mainly based on Eric L. Barnes's video tutorial
