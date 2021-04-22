@@ -26,13 +26,15 @@ This scenario also contains a custom verification step.
 
 <h5>How to run tests in feature files?</h5>
 
-First of all have to start the mini web application:
+First of all you have to start the sample web application derived by Laravel:
 
 <code>$ php -S localhost:8888 -t public</code>
 
-To run scenarios, open a new cmd and just type it:
+Then to run scenarios, open a new cmd and just type it:
 
 <code>$ behat</code>
+
+That's it
 
 
 ## Resources and Links
