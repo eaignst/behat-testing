@@ -13,12 +13,12 @@
 Behat is a php framwork for autotesting any project. It contains Behavior-Driven Test Cases placed in <code>.feature</code> files. These files have special format called Gherkin-syntax that is more readable by human than test cases implemented with phpunit.
 
 <h4>Description</h4>
-This project contains only one example feature file in directory <code>/features</code> 
-to demonstrate how BDD testing is working. 
+This project contains only one example feature file in directory <code>/features</code>
+to demonstrate how BDD testing is working.
 
 A feature file can contain one or more scenario. A scenario can contain one or more step.
-Each Step have to implement in php files (see FeatureContext.php). 
-Behat will do the mapping between Steps and php functions.  
+Each Step have to implement in php files (see FeatureContext.php).
+Behat will do the mapping between Steps and php functions.
 
 In our case we have two scenario, first is testing the '/' page and searching 'Laravel' text value on the page.
 Second scenario is also testing a page (try to open /home page) and check whether redirecting to /login page is working.
