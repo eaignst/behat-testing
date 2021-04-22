@@ -7,27 +7,32 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Behat with Laravel
+## BDD testing with Laravel
 
-Behat is a php framwork for autotesting your project. It contains Behavior-Driven Test Cases placed in '.feature' files. Those has special format called Gherkin-syntax that  more readable by humans than test cases implemented by phpunit.
+<h4>About Behat</h4>
+Behat is a php framwork for autotesting any project. It contains Behavior-Driven Test Cases placed in <code>.feature</code> files. These files have special format called Gherkin-syntax that is more readable by human than test cases implemented with phpunit.
 
-This project contains only one example.feature file in /features directory 
-to demonstrate how a simple behat project is working. 
+<h4>Description</h4>
+This project contains only one example feature file in directory <code>/features</code> 
+to demonstrate how BDD testing is working. 
 
-
-To run behat test in feature file
-First of all open a cmd window and start the web application:
-
-$ php -S localhost:8888 -t public
-
-
-First scenario is testing the '/' page and searching 'Laravel' text value on the page.
+A feature file can contain one or more scenario. A scenario can contain one or more step.
+Steps need implemented by php like FeatureContext.php and have to to minimal as you can. Behat will mapping 
+In our case we have two scenario, first is testing the '/' page and searching 'Laravel' text value on the page.
 Second scenario is also testing a page (try to open /home page) and check whether redirecting to /login page is working.
 This scenario also contains a custom verification step.
 
-To start these scenarios, open a new cmd and type it:
+<h4>Usage</h4>
 
-$ behat
+<h5>How to run tests in feature files?</h5>
+
+First of all have to start the mini web application:
+
+<code>$ php -S localhost:8888 -t public</code>
+
+To run scenarios, open a new cmd and just type it:
+
+<code>$ behat</code>
 
 
 ## Resources and Links
